@@ -1,0 +1,111 @@
+AI Interview Coach
+
+A Prompt-Engineered Behavioral Simulation System
+
+Audience: Recruiters • Hiring Managers • Tech Leads
+Tone: Analytical, authoritative, product-first
+Vibe: Applied AI system → not a demo
+
+[0:00 – 0:05] The Hook (Sharper, Higher Signal)
+
+Visual:
+Fast-cut contrast:
+Candidate confidently presenting a resume → abrupt freeze during a follow-up question → system UI activates.
+
+On-Screen Text:
+Strong resume. Weak signal.
+
+Voiceover:
+
+“Resumes are static. Interviews are adversarial.”
+
+[0:05 – 0:15] The Problem (More Precise Framing)
+
+Visual:
+Left: Generic interview prep content
+Right: Interviewer probing deeper, escalating
+
+On-Screen Text:
+Static prep fails under dynamic pressure.
+
+Voiceover:
+
+“Most interview prep optimizes for memorization.
+Real interviews optimize for reasoning under pressure.”
+
+[0:15 – 0:30] The Product (Repositioned as a System)
+
+Visual:
+AI Interview Coach interface
+Role selected: Senior Product Manager – Growth
+AI issues a nuanced behavioral + follow-up hybrid question.
+
+On-Screen Text:
+Adaptive. Stateful. Evaluative.
+
+Voiceover:
+
+“The AI Interview Coach isn’t a question bank.
+It’s a stateful interview simulator—designed to adapt, challenge, and evaluate in real time.”
+
+[0:30 – 0:58] The Engine (Staff-Level Prompt Architecture)
+
+Visual:
+System diagram with isolated prompt layers and feedback loops.
+
+On-Screen Text (Sequential Reveal)
+System Prompts — Persona & Constraints
+Reasoning Prompts — Follow-up Generation
+Evaluation Prompts — Scoring & Signal Extraction
+Refinement Prompts — Output Optimization
+Guardrails — Bias & Consistency Control
+Voiceover (Upgraded, Explicit)
+
+“This system is built on layered prompt orchestration—not a single chat flow.
+
+First, system prompts lock the AI into a bounded interviewer persona, defining tone, authority, and domain expectations.
+
+Second, reasoning prompts analyze candidate responses for depth, ambiguity, and risk—then generate targeted follow-ups designed to increase cognitive load.
+
+Third, evaluation prompts score answers across clarity, relevance, confidence, and decision quality—using normalized criteria to ensure consistency.
+
+Fourth, refinement prompts transform raw responses into high-impact alternatives, showing candidates exactly how stronger answers are structured.
+
+Finally, guardrail prompts enforce persona boundaries, mitigate bias, and prevent evaluation drift across sessions.”
+
+[0:58 – 1:08] Why This Is Hard (Credibility Injection)
+
+Visual:
+Evaluation dashboard stabilizing over multiple sessions.
+
+On-Screen Text:
+The challenge isn’t generation. It’s control.
+
+Voiceover:
+
+“The hardest problem wasn’t asking better questions—it was maintaining scoring consistency, preventing prompt leakage, and keeping personas stable across long conversations.”
+
+[1:08 – 1:18] Why This Matters (Strategic Payoff)
+
+Visual:
+Before/after comparison of candidate performance signals.
+
+On-Screen Text:
+From intuition → measurable signal.
+
+Voiceover:
+
+“This turns interviews from intuition-driven conversations into measurable signal extraction—without removing the human element.”
+
+[1:18 – 1:28] Call to Action (Sharpened for Hiring)
+
+Visual:
+Clean end card: Name • Title • Portfolio link / QR
+
+On-Screen Text:
+Designing AI systems, not demos.
+
+Voiceover:
+
+“If you’re hiring someone to design AI behavior—not just call APIs—let’s connect.
+Full prompt architecture breakdown in the comments.”
