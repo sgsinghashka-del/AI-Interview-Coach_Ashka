@@ -130,14 +130,5 @@ This project demonstrates:
 - Evaluation-first AI systems
 - Production-oriented thinking beyond a basic API wrapper
 
-## What this is not
 
-- ❌ A static interview-question generator
-- ❌ A basic chatbot wrapper
-- ❌ An isolated prompt experiment
 
-> **Designing AI systems that behave intentionally under real-world constraints.**
-
-## License
-
-No license has been specified yet. Add a `LICENSE` file before redistributing the project.
