@@ -1,135 +1,143 @@
-**AI Interview Coach**
-A Prompt-Engineered Behavioral Simulation System
+# AI Interview Coach
 
-Designing AI behavior, not demos.
+> **A prompt-engineered behavioral interview simulation system**
+>
+> **Resumes are static. Interviews are adversarial.**
 
-AI Interview Coach is a stateful interview simulation system built using layered prompt engineering.
-It replicates real interview dynamics—adaptive follow-ups, pressure escalation, and structured evaluation—rather than static question-answer flows.
+<p align="center">
+  <img src="assets/ai-interview-coach-preview.svg" alt="AI Interview Coach product preview showing an adaptive interview dashboard" width="900">
+</p>
 
-This project demonstrates applied prompt architecture, LLM behavior control, and evaluation-first AI design in a real-world hiring context.
+<p align="center">
+  <strong>Adaptive questioning · Stateful conversations · Consistent evaluation</strong>
+</p>
 
-**Problem Statement**
+<p align="center">
+  <a href="#how-it-works">How it works</a> ·
+  <a href="#prompt-architecture">Prompt architecture</a> ·
+  <a href="#use-cases">Use cases</a> ·
+  <a href="#getting-started">Getting started</a>
+</p>
 
-Most interview preparation tools optimize for memorization.
-Real interviews test reasoning under pressure, handling ambiguity, and decision clarity.
+## Overview
 
-Resumes are static. Interviews are adversarial.
+AI Interview Coach is a stateful interview simulation system built with layered prompt engineering. It is designed to replicate realistic interviewer behavior rather than produce a static question-and-answer flow.
 
-AI Interview Coach addresses this gap by simulating how real interviewers think, probe, and evaluate.
+The system adapts to candidate responses, introduces targeted follow-ups, increases cognitive pressure, and evaluates answers against explicit criteria. The result is a more measurable and useful interview practice experience.
 
-**What This System Does**
+> **This is not a chatbot.** It is a behavioral simulation and evaluation system.
 
-Simulates realistic interviewer personas (HR, Product, Technical, Leadership)
-Dynamically generates follow-up questions based on candidate responses
-Escalates cognitive pressure through targeted probing
-Scores responses using normalized evaluation criteria
-Refines answers into high-impact alternatives
-Maintains persona stability and scoring consistency across long conversations
+## Why it matters
 
-**This is not a chatbot.**
-It is a behavioral simulation and evaluation system.
+Most interview preparation tools optimize for memorization. Real interviews test reasoning under pressure, ambiguity handling, communication, and decision quality.
 
-**Prompt Architecture Overview**
+AI Interview Coach closes that gap by simulating how interviewers probe, challenge, and evaluate candidates:
 
-The system is built using layered prompt orchestration, where each prompt has a single, isolated responsibility.
+- Turns conversations into measurable signals
+- Helps candidates identify weak or ambiguous answers
+- Demonstrates how stronger responses are constructed
+- Preserves persona and scoring consistency across a session
 
-User Input
-   ↓
-System Prompts (Persona & Constraints)
-   ↓
-Reasoning Prompts (Adaptive Follow-ups)
-   ↓
-Evaluation Prompts (Scoring & Signal Extraction)
-   ↓
-Refinement Prompts (Answer Optimization)
-   ↓
-Guardrails (Bias, Drift & Consistency Control)
+## What the system does
 
-**Prompt Layers Explained**
+| Capability | Description |
+| --- | --- |
+| **Interviewer personas** | Simulates HR, Product, Technical, and Leadership interview styles |
+| **Adaptive follow-ups** | Generates targeted questions from the candidate's previous response |
+| **Pressure escalation** | Increases cognitive load through deeper probing and ambiguity checks |
+| **Structured evaluation** | Scores clarity, relevance, confidence, and decision quality |
+| **Answer refinement** | Transforms raw answers into high-impact alternatives |
+| **Session consistency** | Maintains persona stability and evaluation discipline over long conversations |
 
-1. System Prompts — Persona & Constraints
-Lock the AI into a bounded interviewer persona
-Define tone, authority, and domain expectations
-Prevent persona drift during long sessions
+## How it works
 
-**Goal: Behavioral consistency**
+```mermaid
+flowchart LR
+    A[Candidate response] --> B[Persona & constraints]
+    B --> C[Adaptive reasoning]
+    C --> D[Follow-up question]
+    D --> E[Evaluation & scoring]
+    E --> F[Answer refinement]
+    F --> G[Actionable feedback]
+    G -. context .-> C
+    G -. session state .-> B
+```
 
-2. Reasoning Prompts — Follow-up Generation
-Analyze responses for depth, ambiguity, and weak signal
-Generate targeted follow-ups to increase cognitive load
+## Prompt architecture
 
-**Goal: Pressure simulation**
+Each prompt layer has one isolated responsibility. This separation makes the behavior easier to reason about, evaluate, and improve.
 
-3. Evaluation Prompts — Scoring & Signal Extraction
-Score answers across normalized dimensions:
-Clarity
-Relevance
-Confidence
-Decision quality
-Ensure consistency across personas and sessions
+1. **System prompts — Persona & constraints**
+   - Define tone, authority, domain expectations, and boundaries
+   - Reduce persona drift during long sessions
 
-**Goal: Measurable signal, not intuition**
+2. **Reasoning prompts — Follow-up generation**
+   - Detect depth, ambiguity, missing evidence, and weak signals
+   - Generate follow-ups that increase cognitive load intentionally
 
-4. Refinement Prompts — Output Optimization
-Transform raw answers into structured, high-impact responses
-Show candidates how stronger answers are constructed
+3. **Evaluation prompts — Scoring & signal extraction**
+   - Apply normalized criteria across clarity, relevance, confidence, and decision quality
+   - Replace intuition-only feedback with observable signals
 
-**Goal: Learning through contrast**
+4. **Refinement prompts — Output optimization**
+   - Convert raw answers into structured, high-impact alternatives
+   - Teach through contrast: what was said versus what could be stronger
 
-5. Guardrails — Bias & Consistency Control
-Enforce persona boundaries
-Prevent evaluation drift
-Reduce bias amplification
+5. **Guardrails — Bias & consistency control**
+   - Enforce persona boundaries
+   - Reduce evaluation drift and bias amplification
+   - Protect the intended interview flow
 
-**Goal: Control over generation**
+## Why this is hard
 
-Why This Is Hard
+The difficult part is not generating another interview question. The difficult part is controlling behavior over time:
 
-The primary challenge is not question generation.
+- Maintaining scoring consistency
+- Preventing prompt leakage
+- Stabilizing personas across long conversations
+- Balancing adaptability with predictable evaluation
 
-The real difficulty lies in:
+This project is intentionally designed around those constraints.
 
-Maintaining scoring consistency
-Preventing prompt leakage
-Stabilizing personas over long conversations
-Balancing adaptability with control
+## Use cases
 
-**This project is intentionally designed around those constraints.**
+- Interview preparation and coaching
+- Leadership and behavioral training
+- Internal hiring calibration
+- Prompt engineering demonstrations
+- Applied AI portfolios and system-design discussions
 
-Why This Matters
+## Getting started
 
-Traditional interviews rely heavily on the interviewer's intuition.
+This repository currently contains the prompt architecture and product narrative for the system.
 
-**AI Interview Coach:**
+1. Clone the repository:
 
-Converts conversations into measurable signals
-Improves candidate self-awareness
-Preserves the human element while increasing consistency
+   ```bash
+   git clone https://github.com/sgsinghashka-del/AI-Interview-Coach_Ashka.git
+   cd AI-Interview-Coach_Ashka
+   ```
 
-From intuition → measurable signal.
+2. Review [`Prompt_AI Coach`](./Prompt_AI%20Coach) for the full product script and behavioral design.
+3. Use the prompt layers above as the blueprint for implementing an interviewer, evaluator, and refinement loop with your preferred LLM stack.
 
-**Use Cases**
-Interview preparation and coaching
-Leadership and behavioral training
-Internal hiring calibration
-Prompt engineering and LLM system demonstrations
-Applied AI portfolios
+## Project goals
 
+This project demonstrates:
 
+- Advanced prompt-engineering architecture
+- LLM behavior design under explicit constraints
+- Evaluation-first AI systems
+- Production-oriented thinking beyond a basic API wrapper
 
-**Project Goals**
+## What this is not
 
-This repository is designed to demonstrate:
+- ❌ A static interview-question generator
+- ❌ A basic chatbot wrapper
+- ❌ An isolated prompt experiment
 
-Advanced prompt engineering architecture
-LLM behavior design under constraints
-Evaluation-first AI systems
-Production-oriented thinking (not demos)
-What This Is Not
-❌ A static interview question generator
-❌ A basic chatbot wrapper
-❌ A prompt experiment
+> **Designing AI systems that behave intentionally under real-world constraints.**
 
-This is a prompt-engineered behavioral system.
+## License
 
-Designing AI systems that behave intentionally under real-world constraints.
+No license has been specified yet. Add a `LICENSE` file before redistributing the project.
